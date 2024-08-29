@@ -45,7 +45,7 @@ namespace EF_Core01.Contexts
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = .; Database = CompanyDB; Trusted_Connection = True;Encrypt=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Server = .; Database = ITIDb; Trusted_Connection = True;Encrypt=True;TrustServerCertificate=True");
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
